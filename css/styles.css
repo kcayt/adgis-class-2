@@ -1,1 +1,39 @@
-h1{color=orange}
+body {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+#book-covers-wp {
+  width: 50%;
+  display: center;
+  float: center;
+  text-align: center;
+}
+
+#book-cover {
+  width: 50%;
+  height: 300px;
+  display: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.book-cover {
+   border: 1px solid #f8ff;
+   padding: 8px;
+   border-radius: 8px;
+   margin-bottom: 8px;
+}
+.author {
+  display: none;
+}
+
+.book-cover:hover + .author {
+  display: block;
+  color: purple;
+}
+.book-cover:hover {
+   background-color: #f8ff;
+   cursor: pointer;
+   display: .author;
+}
